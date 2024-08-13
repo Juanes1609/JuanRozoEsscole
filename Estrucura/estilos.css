@@ -1,0 +1,801 @@
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0; /* Elimina el relleno por defecto del body */
+    color: #333; /* Color del texto */
+}
+/*Fin body*/
+
+/* Estilo del encabezado */
+header {
+    background-color: #fff; /* Color de fondo del encabezado */
+    padding: 1rem 2rem; /* Añade relleno dentro del encabezado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil debajo del encabezado */
+}
+/*Fin Header*/
+
+
+/* Estilos del logo en el encabezado */
+.logo-lupe {
+    height: 50px; /* Altura del logo */
+}
+/*Fin logo*/
+
+/* Estilos de los encabezados de tercer nivel */
+h3 {
+    color: #D29bfd; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+    font-family: Arial, sans-serif; /* Familia de la fuente */
+    margin-bottom: 10px; /* Ajusta el margen inferior */
+}
+/*Fin encabezado h3*/
+
+/*//////////////////////////////////////////////////////////////////// Estilo navegación ///////////////////////////////////////////////////////////////////*/
+
+/* Estilo general del contenedor de navegación */
+nav {
+    display: flex; /* Utiliza flexbox para organizar el contenido */
+    justify-content: space-between; /* Distribuye el contenido con espacio entre ellos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    padding: 0 1rem; /* Añade un poco de relleno a los lados */
+    height: 76px; /* Asegura una altura consistente para el navbar */
+    max-width: 100%; /* Evita que el navegador crezca demasiado en ancho */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+}
+/*Fin del nav*/
+
+/* Estilo del logo en el contenedor de navegación */
+.logo-lupe {
+    max-height: 50px; /* Asegura que el logo tenga un tamaño manejable */
+}
+/*Fin Logo*/
+
+/* Lista principal del menú */
+nav ul {
+    display: flex; /* Utiliza flexbox para alinear los elementos de la lista */
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    flex-grow: 1; /* Permite que la lista crezca para ocupar el espacio disponible */
+    align-items: center; /* Asegura que los elementos se alineen verticalmente en el centro */
+}
+/*Fin del nav ul*/
+
+/* Estilo de los elementos de la lista en el menú */
+nav ul li {
+    margin: 0 1rem; /* Añade espacio entre los elementos de la lista */
+    position: relative; /* Posiciona los submenús relativos a cada elemento */
+}
+/*Fin del nav uv li*/
+
+/* Estilo de los enlaces en el menú */
+nav ul li a {
+    color: #333; /* Define el color del texto de los enlaces */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+    padding: 0.5rem; /* Añade relleno alrededor del texto */
+}
+/*Fin del nav uv li a*/
+
+/* Muestra el submenú al pasar el ratón sobre el elemento principal */
+nav ul li:hover .dropdown {
+    display: block; /* Muestra el submenú al hacer hover */
+}
+/*Fin del nav uv li:hover .dropdown*/
+
+/* Estilo del submenú */
+.dropdown {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute; /* Posiciona el submenú justo debajo del elemento principal */
+    background-color: #fff; /* Establece un fondo blanco para el submenú */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Añade una sombra al submenú */
+    z-index: 1; /* Asegura que el submenú se superponga a otros elementos */
+    min-width: 200px; /* Establece un ancho mínimo para el submenú */
+}
+/*Fin del estilo del menu*/
+
+/* Estilo de los elementos del submenú */
+.dropdown li {
+    padding: 0.5rem; /* Añade relleno a los elementos del submenú */
+}
+/*Fin del submenu*/
+
+/* Estilo de los enlaces del submenú */
+.dropdown li a {
+    display: block; /* Hace que los enlaces ocupen toda el área del contenedor */
+    padding: 0.5rem 1rem; /* Añade relleno a los enlaces del submenú */
+}
+/*Fin de los estilos del submenu*/
+
+/* Estilo de los botones de Contáctanos e Ingrese */
+.buttons {
+    display: flex; /* Utiliza flexbox para organizar los botones */
+    align-items: center; /* Asegura que los botones se alineen verticalmente en el centro */
+    margin-left: auto; /* Empuja los botones a la derecha */
+}
+/*Fin del button*/
+
+/* Estilo del botón Contáctanos */
+.contactanos-lupe {
+    display: flex; /* Utiliza flexbox para alinear el contenido */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    font-family: 'Lato', sans-serif; /* Define la fuente para el botón */
+    font-size: 1rem; /* Usa rem para consistencia en el tamaño de fuente */
+    font-weight: bold; /* Hace el texto en negrita */
+    width: 8rem; /* Define un ancho fijo usando rem */
+    height: 2.5rem; /* Define una altura fija usando rem */
+    border-radius: 1rem; /* Hace los bordes redondeados usando rem */
+    border: 1px solid rgb(108, 50, 150); /* Define el color y grosor del borde */
+    color: rgb(108, 50, 150); /* Define el color del texto */
+    transition: box-shadow 0.6s ease-in-out, color 0.6s ease-in-out, background-color 0.6s ease-in-out, border 0.6s ease-in-out; /* Añade transiciones para cambios de estilo */
+    text-decoration: none; /* Elimina el subrayado del texto */
+}
+/*Fin del contactanos*/
+
+/* Estilo del botón Contáctanos al pasar el ratón sobre él */
+.contactanos-lupe:hover {
+    box-shadow: 0px 0px 10px rgba(108, 50, 150, 0.3); /* Añade una sombra al hacer hover */
+    background-color: rgb(108, 50, 150); /* Cambia el fondo al hacer hover */
+    color: white; /* Cambia el color del texto al hacer hover */
+    border: 1px solid transparent; /* Elimina el borde al hacer hover */
+}
+/*Fin de la segunda parte de contactanos*/
+
+/* Estilo del botón Ingresar */
+.ingresar-lupe {
+    display: flex; /* Utiliza flexbox para alinear el contenido */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    font-family: 'Lato', sans-serif; /* Define la fuente para el botón */
+    font-size: 1rem; /* Usa rem para consistencia en el tamaño de fuente */
+    font-weight: bold; /* Hace el texto en negrita */
+    background-color: rgb(108, 50, 150); /* Define el color de fondo */
+    color: white; /* Define el color del texto */
+    width: 8rem; /* Define un ancho fijo usando rem */
+    height: 2.5rem; /* Define una altura fija usando rem */
+    border-radius: 1rem; /* Hace los bordes redondeados usando rem */
+    transition: box-shadow 0.6s ease-in-out, color 0.6s ease-in-out, background-color 0.6s ease-in-out, border 0.6s ease-in-out; /* Añade transiciones para cambios de estilo */
+    text-decoration: none; /* Elimina el subrayado del texto */
+}
+/*Fin del ingresar*/
+
+/* Estilo del botón Ingresar al pasar el ratón sobre él */
+.ingresar-lupe:hover {
+    box-shadow: 0px 0px 10px rgba(108, 50, 150, 0.3); /* Añade una sombra al hacer hover */
+    color: rgb(108, 50, 150); /* Cambia el color del texto al hacer hover */
+    background-color: white; /* Cambia el color de fondo al hacer hover */
+    border: 1px solid rgb(108, 50, 150); /* Añade un borde al hacer hover */
+}
+/*Fin de la segunda parte de ingresar*/
+
+/*//////////////////////////////////////////////////////////////////// Fin del Navegador ///////////////////////////////////////////////////////////////////*/
+
+/* Animaciones */
+
+/* Animación para la imagen principal */
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0; /* La imagen comienza siendo invisible */
+        transform: scale(0.8); /* La imagen comienza más pequeña */
+    }
+    100% {
+        opacity: 1; /* La imagen termina siendo completamente visible */
+        transform: scale(1); /* La imagen termina en su tamaño original */
+    }
+}
+/*Fin de la primera configuracion de la imagen principal PC*/
+
+/* Aplica la animación a la imagen */
+.animated-image {
+    animation: fadeInZoom 2s ease-out; /* Aplica la animación al cargar la imagen */
+}
+/*Fin de la segunda configuracion de la imagen principal PC*/
+
+/*//////////////////////////////////////////////////////////////////// Seccion Morada Inicio ///////////////////////////////////////////////////////////////////*/
+
+/* Animación de zoom para la imagen en la sección .hero */
+.animated-image {
+    transition: transform 0.5s ease-in-out; /* Añade una transición suave al hacer hover */
+}
+/*Fin de la tercera configuracion de la imagen principal PC*/
+
+.animated-image:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al hacer hover */
+}
+/*Fin de la primera configuracion de la imagen principal PC*/
+
+/* Animación de zoom para las imágenes en la sección .features */
+.feature img {
+    transition: transform 0.5s ease-in-out; /* Añade una transición suave al hacer hover */
+}
+/*Fin de la primera configuracion de las imagenes del recuadro morado*/
+
+.feature img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al hacer hover */
+}
+/*Fin de la segunda configuracion de las imagenes del recuadro morado*/
+
+/* Estilo del título secundario */
+.secon-tittle {
+    padding: 2rem 1rem; /* Añade relleno alrededor del título */
+    font-size: 30px; /* Define el tamaño de la fuente */
+    color: #009c8c; /* Define el color del texto */
+}
+/*Fin del tema del titulo*/
+
+/* Estilos del main */
+main {
+    padding: 0 2rem; /* Añade relleno a los lados del main */
+}
+/*Fin del main*/
+
+/* Estilos de la sección hero */
+.hero {
+    text-align: center; /* Centra el texto en la sección */
+    padding: 4rem 2rem; /* Añade relleno dentro de la sección */
+    background-color: #f5f5f5; /* Define el color de fondo de la sección */
+}
+/*Fin del Hero*/
+
+/* Estilos del título en la sección hero */
+.hero h1 {
+    color: #6a1b9a; /* Define el color del texto */
+    font-size: 3.0rem; /* Define el tamaño de la fuente */
+    margin-bottom: 1rem; /* Añade margen inferior */
+}
+/*Fin del titulo en la seccion hero*/
+
+/* Estilos del párrafo en la sección hero */
+.hero p {
+    font-size: 1.2rem; /* Define el tamaño de la fuente */
+    margin-bottom: 2rem; /* Añade margen inferior */
+}
+/*Fin de los estilos del parrafo*/
+
+/* Estilos de las imágenes en la sección hero */
+.hero img {
+    max-width: 80%; /* Define el ancho máximo de la imagen */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+/*Fin de las imagenes del recuadro morado*/
+
+/* Estilos de la sección features */
+.features {
+    background-image: url(img/Recurso\ 41.png); /* Define la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen en el área visible */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white; /* Define el color del texto */
+    text-align: center; /* Centra el texto en la sección */
+    padding: 4rem 2rem; /* Añade relleno dentro de la sección */
+}
+/*Fin del recuadro morado*/
+
+/* Estilos del título en la sección features */
+.features h1 {
+    margin-bottom: 2.5rem; /* Añade margen inferior */
+    font-size: 50px; /* Define el tamaño de la fuente */
+}
+/*Fin del features h1*/
+
+/* Estilos de cada elemento en la sección features */
+.feature {
+    display: inline-block; /* Hace que los elementos se alineen en línea */
+    width: 30%; /* Define el ancho de cada elemento */
+    margin: 1.5%; /* Añade margen alrededor de cada elemento */
+    vertical-align: top; /* Alinea los elementos al principio */
+}
+/*Fin de la sectorizacion de los elementos del cuadro morado*/
+
+/* Estilos de las imágenes en la sección feature */
+.feature img {
+    height: 150px; /* Define la altura fija de la imagen */
+    width: 210px; /* Define el ancho fijo de la imagen */
+    object-fit: contain; /* Ajusta la imagen para que quepa dentro del contenedor */
+}
+/*Fin de la config de las imagenes de la seccion morada*/
+
+/* Estilos del título dentro de cada elemento de feature */
+.feature h3 {
+    font-size: 1.2rem; /* Define el tamaño de la fuente */
+    margin-bottom: 1rem; /* Añade margen inferior */
+}
+/*Fin estilo titulo h3 recuadro morado*/
+
+/* Estilos del párrafo dentro de cada elemento de feature */
+.feature p {
+    font-size: 1rem; /* Define el tamaño de la fuente */
+}
+/*Fin parrafo*/
+
+/* Estilos de los botones */
+button {
+    background-color: #fff; /* Define el color de fondo del botón */
+    color: #6a1b9a; /* Define el color del texto del botón */
+    padding: 1rem 2rem; /* Añade relleno dentro del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1rem; /* Define el tamaño de la fuente */
+    margin-top: 2rem; /* Añade margen superior */
+}
+/*Fin de la primera configuracion del boton*/
+
+/* Estilos del botón al pasar el ratón sobre él */
+button:hover {
+    background-color: #e1bee7; /* Cambia el color de fondo al hacer hover */
+}
+/*Fin del boton*/
+
+/*//////////////////////////////////////////////////////////////////// Seccion Morada Inicio ///////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////////// Inicio del Carrusel ///////////////////////////////////////////////////////////////////*/
+
+/* Animación del carrusel */
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0; /* La imagen comienza siendo invisible */
+        transform: scale(0.8); /* La imagen comienza más pequeña */
+    }
+    100% {
+        opacity: 1; /* La imagen termina siendo completamente visible */
+        transform: scale(1); /* La imagen termina en su tamaño original */
+    }
+}
+/*Fin de la primera parte de la animacion del carrusel*/
+
+/* Estilo de las imágenes en el carrusel */
+.carousel-animated-image {
+    animation: fadeInZoom 1.5s ease-out; /* Aplica la animación al cargar la imagen */
+    transition: transform 0.5s ease-in-out; /* Añade una transición suave al hacer hover */
+}
+
+.carousel-animated-image:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen al hacer hover */
+}
+/*Fin de las imagenes del carrusel*/
+
+/* Estilos del carrusel */
+.carousel {
+    display: flex; /* Utiliza flexbox para organizar el contenido */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    width: 60%; /* Define el ancho del carrusel */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    position: relative; /* Permite posicionar los botones relativos al carrusel */
+    padding: 4rem 2rem; /* Añade relleno dentro del carrusel */
+}
+/*Fin del carrusel*/
+
+/* Estilo de los botones de navegación del carrusel */
+.carousel-button {
+    background-color: #f5f5f5; /* Define el color de fondo del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 2.3rem; /* Define el tamaño de la fuente */
+    position: absolute; /* Posiciona el botón de manera absoluta */
+    top: 50%; /* Posiciona el botón verticalmente en el centro */
+    transform: translateY(-50%); /* Ajusta la posición vertical del botón */
+    width: 58px; /* Define el ancho del botón */
+    height: 58px; /* Define la altura del botón */
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    display: flex; /* Utiliza flexbox para alinear el contenido */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    z-index: 1; /* Asegura que el botón esté por encima de otros elementos */
+    color: #808080; /* Define el color del texto */
+    border: 2px solid #f5f5f5; /* Define el color y grosor del borde */
+}
+/*Fin del estilo de los botones del carrusel*/
+
+/* Estilo del botón de navegación anterior */
+.prev {
+    left: -102px; /* Posiciona el botón a la izquierda */
+}
+/*Fin de la posicion del primer boton*/
+
+/* Estilo del botón de navegación siguiente */
+.next {
+    right: -102px; /* Posiciona el botón a la derecha */
+}
+/*Fin de la posicion del segundo boton*/
+
+/* Estilos del contenido del carrusel */
+.carousel-content {
+    display: flex; /* Utiliza flexbox para organizar el contenido */
+    overflow: visible; /* Permite que el contenido desborde */
+    width: 100%; /* Define el ancho del contenido del carrusel */
+}
+/*Fin del contenido del carrusel*/
+
+/* Estilo de cada ítem del carrusel */
+.carousel-item {
+    display: none; /* Oculta los ítems por defecto */
+    flex-shrink: 0; /* Evita que el ítem se reduzca */
+    width: 100%; /* Define el ancho del ítem */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+    display: flex; /* Utiliza flexbox para alinear el contenido */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+/*Fin de cada item del carrusel*/
+
+/* Muestra el ítem activo del carrusel */
+.carousel-item.active {
+    display: flex; /* Muestra el ítem activo */
+}
+/*Fin del item activo*/
+
+/* Estilos de la imagen del carrusel */
+.carousel-image {
+    width: 100%; /* Define el ancho de la imagen */
+    height: 300px; /* Define la altura de la imagen */
+    display: flex; /* Utiliza flexbox para alinear el contenido */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    overflow: visible; /* Permite que la imagen desborde */
+}
+/*Fin del estilo de las imagenes del carrusel*/
+
+/* Estilo de la imagen dentro del carrusel */
+.carousel-image img {
+    max-width: 100%; /* Define el ancho máximo de la imagen */
+    max-height: 100%; /* Define la altura máxima de la imagen */
+    object-fit: contain; /* Ajusta la imagen para que quepa dentro del contenedor */
+}
+/*Fin del estilo dentro del carrusel*/
+
+/* Estilo del botón de navegación del carrusel al pasar el ratón sobre él */
+.carousel-button:hover {
+    background-color: #fff; /* Cambia el color de fondo al hacer hover */
+}
+/*Fin del estilo del boton del carrusel*/
+
+/* Estilo del texto del carrusel */
+.carousel-text {    margin-left: 20px; /* Añade margen izquierdo */
+}
+/*Fin del estilo del parrafo dentro del carrusel */
+
+/* Estilo del título del texto del carrusel */
+.carousel-text h2 {
+    font-size: 2rem; /* Define el tamaño de la fuente */
+    color: #1e805e; /* Define el color del texto */
+}
+/*Fin del titulo estilo del carrusel*/
+
+/* Estilo del subtítulo del texto del carrusel */
+.carousel-text h3 {
+    font-size: 2.2rem; /* Define el tamaño de la fuente */
+    color: #1e805e; /* Define el color del texto */
+}
+/*Fin subtitutlo carrusel*/
+
+/* Estilo del párrafo del texto del carrusel */
+.carousel-text p {
+    font-size: 1rem; /* Define el tamaño de la fuente */
+    color: #333; /* Define el color del texto */
+}
+/*Fin del texto carrusel*/
+
+/*//////////////////////////////////////////////////////////////////// Fin del Carrusel ///////////////////////////////////////////////////////////////////*/
+
+/* Estilos de la tarjeta de información */
+.info-card {
+    display: flex; /* Utiliza flexbox para alinear el contenido */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    background-color: #a2e1dc; /* Define el color de fondo */
+    border-radius: 40px; /* Redondea las esquinas de la tarjeta */
+    padding: 20px; /* Añade relleno dentro de la tarjeta */
+    margin: 20px auto; /* Añade margen vertical y centra la tarjeta horizontalmente */
+    max-width: 990px; /* Define el ancho máximo de la tarjeta */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añade sombra a la tarjeta */
+}
+/*Fin de la tarjeta informativa*/
+
+/* Estilo del icono dentro de la tarjeta de información */
+.info-icon {
+    flex: 0 0 auto; /* Evita que el icono se reduzca */
+    margin-right: 20px; /* Añade margen derecho */
+    margin-left: 20px; /* Añade margen izquierdo */
+}
+/*Fin de la imagen de la lupa*/
+
+/* Estilo de la imagen dentro del icono de la tarjeta de información */
+.info-icon img {
+    width: 70px; /* Define el ancho de la imagen */
+    height: 70px; /* Define la altura de la imagen */
+    background-color: #ffffff; /* Define el color de fondo de la imagen */
+    border-radius: 45%; /* Redondea las esquinas de la imagen */
+}
+/*Fin de la imagen de la lupa*/
+
+/* Estilo del texto dentro de la tarjeta de información */
+.info-text {
+    flex: 1 1 auto; /* Permite que el texto se expanda */
+    margin-left: 18px; /* Añade margen izquierdo */
+    margin-right: 40px; /* Añade margen derecho */
+}
+/*Fin del texto de la tajerta informativa*/
+
+/* Estilos de la tarjeta de contacto */
+.contact-card {
+    background-image: url(img/Recurso\ 40.png); /* Define la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área del contenedor */
+    background-position: center; /* Centra la imagen en el área visible */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    border-radius: 15px; /* Redondea las esquinas de la tarjeta */
+    padding: 20px; /* Añade relleno dentro de la tarjeta */
+    margin: 20px auto; /* Añade margen vertical y centra la tarjeta horizontalmente */
+    color: #ffffff; /* Define el color del texto */
+    position: relative; /* Permite posicionar elementos relativos a la tarjeta */
+    text-align: center; /* Centra el texto en la tarjeta */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añade sombra a la tarjeta */
+    max-width: 990px; /* Define el ancho máximo de la tarjeta */
+}
+/*Fin de la tarjete de contacto*/
+
+/* Estilo del título en la tarjeta de contacto */
+.contact-card h2 {
+    font-size: 50px; /* Define el tamaño de la fuente */
+    margin: 0 0 20px 0; /* Añade margen inferior */
+}
+/*Fin del titulo de la tarjeta de contacto*/
+
+/* Estilo del párrafo en la tarjeta de contacto */
+.contact-card p {
+    font-size: 16px; /* Define el tamaño de la fuente */
+    margin: 30px 0 0 0; /* Añade margen superior */
+}
+/*Fin del texto de la tarjeta de contacto*/
+
+/* Estilos del botón en la tarjeta de contacto*/
+.contact-card button {
+    background-color: #ffffff; /* Define el color de fondo del botón */
+    color: #662d91; /* Define el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 20px; /* Añade relleno dentro del botón */
+    font-size: 16px; /* Define el tamaño de la fuente */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Añade una transición suave al hacer hover */
+}
+/*Fin del boton de la tarjeta de contacto*/
+
+/* Estilo del botón en la tarjeta de contacto al pasar el ratón sobre él */
+.contact-card button:hover {
+    background-color: #e0d7f6; /* Cambia el color de fondo al hacer hover */
+}
+/*Fin animacion del boton*/
+
+/* Estilos del pie de página */
+footer {
+    background-color: #f1f1f1; /* Define el color de fondo del pie de página */
+    padding: 20px 0; /* Añade relleno arriba y abajo del pie de página */
+    border-top: 1px solid #ddd; /* Añade un borde superior */
+}
+
+/* Estilo del contenedor del pie de página */
+.footer-container {
+    display: flex; /* Utiliza flexbox para organizar el contenido */
+    justify-content: space-between; /* Distribuye el contenido con espacio entre ellos */
+    max-width: 1200px; /* Define el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Añade relleno dentro del contenedor */
+}
+
+/* Estilo de cada columna en el pie de página */
+.footer-column {
+    flex: 1; /* Hace que cada columna ocupe el mismo espacio */
+    padding: 0 20px; /* Añade relleno a los lados */
+}
+
+/* Estilo del título de cada columna en el pie de página */
+.footer-column h3 {
+    font-size: 16px; /* Define el tamaño de la fuente */
+    color: #333; /* Define el color del texto */
+}
+
+/* Estilo de la lista dentro de cada columna en el pie de página */
+.footer-column ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+}
+
+/* Estilo de cada ítem en la lista del pie de página */
+.footer-column ul li {
+    margin-bottom: 10px; /* Añade margen inferior */
+}
+
+/* Estilo de los enlaces dentro de cada ítem en la lista del pie de página */
+.footer-column ul li a {
+    color: #333; /* Define el color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Estilo del enlace en el pie de página al pasar el ratón sobre él */
+.footer-column ul li a:hover {
+    text-decoration: underline; /* Añade el subrayado al hacer hover */
+}
+
+/* Estilos del pie de página inferior */
+.footer-bottom {
+    display: flex; /* Utiliza flexbox para organizar el contenido */
+    justify-content: space-between; /* Distribuye el contenido con espacio entre ellos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    max-width: 1200px; /* Define el ancho máximo del pie de página inferior */
+    margin: 20px auto 0; /* Añade margen superior e inferior y centra horizontalmente */
+    padding: 20px; /* Añade relleno dentro del pie de página inferior */
+    border-top: 1px solid #ddd; /* Añade un borde superior */
+}
+
+/* Estilo del párrafo en el pie de página inferior */
+.footer-bottom p {
+    margin: 0; /* Elimina el margen */
+    color: #666; /* Define el color del texto */
+}
+
+/* Estilo de la imagen en el pie de página inferior */
+.footer-bottom img {
+    vertical-align: middle; /* Alinea la imagen verticalmente al centro */
+}
+
+/* Estilos de los íconos sociales */
+.social-icons a {
+    margin: 0 5px; /* Añade margen a los lados de cada ícono */
+    display: inline-block; /* Hace que los íconos se alineen en línea */
+}
+
+/* Estilo de las imágenes de los íconos sociales */
+.social-icons img {
+    width: 24px; /* Define el ancho de los íconos */
+    height: 24px; /* Define la altura de los íconos */
+}
+
+/*FINAL DE LOS FOOTER EN GENERAL*/
+
+
+/*//////////////////////////////////////////////////////////////////// Inicio de la segun pagina Formularios ///////////////////////////////////////////////////////////////////*/
+
+    /* Formulario */
+
+    /* Contenedor principal del formulario */
+    .lupe-one {
+        display: flex; /* Usa flexbox para la disposición de los elementos */
+        justify-content: space-between; /* Espacia los elementos en el contenedor */
+        align-items: center; /* Alinea verticalmente los elementos en el centro */
+        padding: 80px 15%; /* Añade relleno arriba y abajo, y a los lados */
+        background-image: url(img/fondo\ gris.png); /* Imagen de fondo */
+        background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+        background-position: center; /* Centra la imagen en el área visible */
+        gap: 110px; /* Espacio entre los elementos dentro del contenedor */
+    }
+    /*Fin del contenedor principal*/
+    
+    /* Texto dentro del formulario */
+    .lupe-text {
+        flex: 1; /* Permite que el texto ocupe todo el espacio disponible */
+        text-align: justify; /* Justifica el texto */
+    }
+    /*Fin del texto dentro del contenedor*/
+
+    /* Título principal dentro del formulario */
+    .lupe-text h1 {
+        color: #6a1b9a; /* Color del texto */
+        margin-bottom: 20px; /* Espacio debajo del título */
+        font-size: 55px; /* Tamaño de la fuente */
+    }
+    /*Fin del titulo dentro del contenedor*/
+
+    /* Subtítulo dentro del formulario */
+    .lupe-text h3 {
+        color: #6F3F7F; /* Color del texto */
+        font-size: 25px; /* Tamaño de la fuente */
+        font-weight: lighter; /* Peso de la fuente más ligero */
+    }
+    /*Fin del subtitulo dentro del contenedor*/
+
+    /* Párrafos dentro del formulario */
+    .lupe-text p {
+        margin-bottom: 15px; /* Espacio debajo del párrafo */
+        font-size: 16px; /* Tamaño de la fuente */
+        line-height: 1.5; /* Altura de línea para espaciado */
+    }
+    /*Fin de los parrafos*/
+
+    /* Enlaces dentro del formulario */
+    .lupe-text a {
+        color: #333; /* Color del texto del enlace */
+        text-decoration: none; /* Sin subrayado */
+        font-weight: bold; /* Fuente en negrita */
+    }
+    /*Fin de los enlaces del formulario*/
+
+    /* Contenedor del formulario */
+    .lupe-form {
+        flex: 1; /* Permite que el formulario ocupe todo el espacio disponible */
+        background-color: #fff; /* Color de fondo */
+        padding: 30px; /* Añade relleno alrededor del contenido */
+        border-radius: 5%; /* Bordes redondeados */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    }
+    /*Fin del contenedor secundario pero esta vez es el formulario*/
+
+    /* Título dentro del formulario */
+    .lupe-form h2 {
+        color: #6a1b9a; /* Color del texto */
+        margin-bottom: 20px; /* Espacio debajo del título */
+        font-size: 30px; /* Tamaño de la fuente */
+        text-align: center; /* Centra el texto */
+    }
+    /*Fin titulo dentro del formulario*/
+
+    /* Fila dentro del formulario */
+    .lupe-row {
+        margin-bottom: 15px; /* Espacio debajo de la fila */
+        width: 100%; /* Se asegura que la fila ocupe el 100% del ancho */
+    }
+    /*Fin de la fila del formulario*/
+
+    /* Grupo de campos dentro del formulario */
+    .lupe-group {
+        display: flex; /* Usa flexbox para la disposición de los elementos */
+        flex-direction: column; /* Dispone los elementos en una columna */
+    }
+
+    /* Etiqueta de los campos dentro del formulario */
+    .lupe-group label {
+        display: block; /* Asegura que la etiqueta sea un bloque */
+        margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+        font-size: 14px; /* Tamaño de la fuente */
+    }
+
+    /* Campos de entrada y selección dentro del formulario */
+    .lupe-group input,
+    .lupe-group select {
+        width: 100%; /* Se asegura que los campos ocupen el 100% del ancho */
+        padding: 10px; /* Añade relleno dentro del campo */
+        border: 1px solid #ccc; /* Borde del campo */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 14px; /* Tamaño de la fuente */
+        background-color: #fff; /* Color de fondo del campo */
+        box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+    }
+    /*FIN DE LOS CAMPOS DEL FORMULARIO*/
+
+    /* Botón dentro del formulario */
+    .lupe-form .btn-solid {
+        width: 100%; /* Se asegura que el botón ocupe el 100% del ancho */
+        background-color: #6a1b9a; /* Color de fondo */
+        border: 1px solid rgb(108, 50, 150); /* Borde del botón */
+        color: #fff; /* Color del texto */
+        padding: 15px; /* Añade relleno dentro del botón */
+        border-radius: 5px; /* Bordes redondeados */
+        border: none; /* Sin borde */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        font-size: 16px; /* Tamaño de la fuente */
+        margin-top: 20px; /* Espacio arriba del botón */
+        text-align: center; /* Centra el texto dentro del botón */
+    }
+    /*Fin del boton del formulario*/
+
+    /* Animación del formulario */
+    /* Añade esta animación para el formulario */
+    @keyframes slideIn {
+        0% {
+            transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
+            opacity: 0; /* Opacidad inicial */
+        }
+        100% {
+            transform: translateX(0); /* Termina en su posición original */
+            opacity: 1; /* Opacidad final */
+        }
+    }
+
+    /* Aplica la animación al formulario */
+    .lupe-form {
+        animation: slideIn 1s ease-out; /* Aplicar la animación */
+    }
+    /*Fin de la unica animacion*/
+
+    /* Fin formulario */
+    
+/*//////////////////////////////////////////////////////////////////// Fin de la segun pagina Formularios ///////////////////////////////////////////////////////////////////*/

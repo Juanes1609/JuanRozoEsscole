@@ -1,0 +1,142 @@
+/* Formulario */
+
+/* Contenedor principal del formulario */
+.lupe-one {
+    display: flex; /* Usa flexbox para la disposición de los elementos */
+    justify-content: space-between; /* Espacia los elementos en el contenedor */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    padding: 80px 15%; /* Añade relleno arriba y abajo, y a los lados */
+    background-image: url(img/fondo\ gris.png); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen en el área visible */
+    gap: 110px; /* Espacio entre los elementos dentro del contenedor */
+}
+/*Fin del contenedor principal*/
+
+/* Texto dentro del formulario */
+.lupe-text {
+    flex: 1; /* Permite que el texto ocupe todo el espacio disponible */
+    text-align: justify; /* Justifica el texto */
+}
+/*Fin del texto dentro del contenedor*/
+
+/* Título principal dentro del formulario */
+.lupe-text h1 {
+    color: #6a1b9a; /* Color del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 55px; /* Tamaño de la fuente */
+}
+/*Fin del titulo dentro del contenedor*/
+
+/* Subtítulo dentro del formulario */
+.lupe-text h3 {
+    color: #6F3F7F; /* Color del texto */
+    font-size: 25px; /* Tamaño de la fuente */
+    font-weight: lighter; /* Peso de la fuente más ligero */
+}
+/*Fin del subtitulo dentro del contenedor*/
+
+/* Párrafos dentro del formulario */
+.lupe-text p {
+    margin-bottom: 15px; /* Espacio debajo del párrafo */
+    font-size: 16px; /* Tamaño de la fuente */
+    line-height: 1.5; /* Altura de línea para espaciado */
+}
+/*Fin de los parrafos*/
+
+/* Enlaces dentro del formulario */
+.lupe-text a {
+    color: #333; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Fuente en negrita */
+}
+/*Fin de los enlaces del formulario*/
+
+/* Contenedor del formulario */
+.lupe-form {
+    flex: 1; /* Permite que el formulario ocupe todo el espacio disponible */
+    background-color: #fff; /* Color de fondo */
+    padding: 30px; /* Añade relleno alrededor del contenido */
+    border-radius: 5%; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+}
+/*Fin del contenedor secundario pero esta vez es el formulario*/
+
+/* Título dentro del formulario */
+.lupe-form h2 {
+    color: #6a1b9a; /* Color del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 30px; /* Tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+}
+/*Fin titulo dentro del formulario*/
+
+/* Fila dentro del formulario */
+.lupe-row {
+    margin-bottom: 15px; /* Espacio debajo de la fila */
+    width: 100%; /* Se asegura que la fila ocupe el 100% del ancho */
+}
+/*Fin de la fila del formulario*/
+
+/* Grupo de campos dentro del formulario */
+.lupe-group {
+    display: flex; /* Usa flexbox para la disposición de los elementos */
+    flex-direction: column; /* Dispone los elementos en una columna */
+}
+
+/* Etiqueta de los campos dentro del formulario */
+.lupe-group label {
+    display: block; /* Asegura que la etiqueta sea un bloque */
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    font-size: 14px; /* Tamaño de la fuente */
+}
+
+/* Campos de entrada y selección dentro del formulario */
+.lupe-group input,
+.lupe-group select {
+    width: 100%; /* Se asegura que los campos ocupen el 100% del ancho */
+    padding: 10px; /* Añade relleno dentro del campo */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de la fuente */
+    background-color: #fff; /* Color de fondo del campo */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+}
+/*FIN DE LOS CAMPOS DEL FORMULARIO*/
+
+/* Botón dentro del formulario */
+.lupe-form .btn-solid {
+    width: 100%; /* Se asegura que el botón ocupe el 100% del ancho */
+    background-color: #6a1b9a; /* Color de fondo */
+    border: 1px solid rgb(108, 50, 150); /* Borde del botón */
+    color: #fff; /* Color del texto */
+    padding: 15px; /* Añade relleno dentro del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin-top: 20px; /* Espacio arriba del botón */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+/*Fin del boton del formulario*/
+
+/* Animación del formulario */
+/* Añade esta animación para el formulario */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
+        opacity: 0; /* Opacidad inicial */
+    }
+    100% {
+        transform: translateX(0); /* Termina en su posición original */
+        opacity: 1; /* Opacidad final */
+    }
+}
+
+/* Aplica la animación al formulario */
+.lupe-form {
+    animation: slideIn 1s ease-out; /* Aplicar la animación */
+}
+/*Fin de la unica animacion*/
+
+/* Fin formulario */
